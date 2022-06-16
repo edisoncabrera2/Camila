@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GAMES LOVE EDCP</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+</head>
+
+<body>
+        <header>
+
+            <section class="textos-header">
+                <h1 class="titulo">Una doncella con una singular belleza!!!</h1>
+            </section>
+
+      
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: rgba(192, 15, 163, 0.521);"></path>
+                </svg></div>
+        </header>
+        <main>
+
+            <section class="contenedor sobre-nosotros">
+                
+                <div class="contenedor-sobre-nosotros">
+
+                    <div class="slider">
+                        <div id="img">
+                            <img id="imgSlider" src="img/5.gif" height="500px" width="400px" alt="" >
+                        </div>
+    
+                    </div>
+    
+                    <div class="contenido-textos">
+                        <h2>Tu cabello cual cascada <br> 
+                            enaltece el fulgurar de tu rostro
+                            hipnotiza y causa admiración<br> 
+                            por la grandiosa belleza<br> 
+                            que causa tu tan sola aparición.</h2> 
+                            <br> 
+                            <br>
+                        <h2>El sólo pronunciar tu nombre<br>
+                            es sinónimo de finura<br>
+                            dado que no existe en el mundo
+                            quien se compare<br> 
+                            con tu carisma y dulzura. 
+                        </h2> 
+                    </div>
+                    
+                </div>
+            </section>
+           
+            <div class="row justify-content-center">
+                
+                <div class="col-md-2 mb-2">
+                    <a href="sorpresa.html" class="btn btn-info btn-block">Anterior</a>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <a href="index.html" class="btn btn-info btn-block">Volver a Leer</a>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <img src="img/card.svg " height="40px" width="40px" alt="">
+                    <h4>For:</h4>
+                    <h4>You</h4>
+                </div>
+
+            </div>
+            <h2 class="titulo-final">&copy; GAMES LOVE | BY EDCP</h2>
+        </footer>
+
+        <script>
+            var img = document.getElementById('img');
+    
+            var imagenes = ['img/6.gif','img/5.gif'];
+    
+            var x = 0;
+    
+            function slide() {
+                if (x < imagenes.length) {
+                    x = x + 1;
+                } else {
+                    x = 1;
+                }
+    
+                img.innerHTML = "<img src=" + imagenes[x - 1] + ">";
+    
+            }
+    
+            setInterval(slide, 4000);
+        </script>
+    
+
+</body>
+
+</html>
